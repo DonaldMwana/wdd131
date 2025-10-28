@@ -1,4 +1,3 @@
-
 const currentYear = document.getElementById('currentYear');
 const lastModified = document.getElementById('lastModified');
 
