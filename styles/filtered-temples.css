@@ -6,7 +6,7 @@ body {
 
 header {
   background-color: #3498db;
-  color: white;
+  color: #ffffff;
   padding: 1rem;
 }
 
@@ -28,7 +28,7 @@ header {
 }
 
 .nav-menu a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -55,7 +55,7 @@ main {
 }
 
 .temple-card {
-  background: white;
+  background: #ffffff;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -78,8 +78,15 @@ main {
 
 footer {
   background-color: #3498db;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
 }
+
+/* ------------------ MEDIA QUERY ------------------ */
+@media (min-width: 768px) {
+  .temple-card img {
+    height: 250px;
+  }
+} 
