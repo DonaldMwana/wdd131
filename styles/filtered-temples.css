@@ -48,9 +48,10 @@ main {
   margin-bottom: 1.5rem;
 }
 
+/* ------------------ Grid Layout ------------------ */
 .temple-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1fr; /* 1 column on small screens */
   gap: 1.5rem;
 }
 
@@ -84,9 +85,26 @@ footer {
   margin-top: 2rem;
 }
 
-/* ------------------ MEDIA QUERY ------------------ */
-@media (min-width: 768px) {
+/* ------------------ MEDIA QUERIES ------------------ */
+
+/* Medium screens: 2 columns */
+@media screen and (min-width: 768px) {
+  .temple-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .temple-card img {
+    height: 220px;
+  }
+}
+
+/* Large screens: 3 columns */
+@media screen and (min-width: 1024px) {
+  .temple-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .temple-card img {
     height: 250px;
   }
-}  
+}
