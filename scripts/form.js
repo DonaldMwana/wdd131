@@ -18,4 +18,4 @@ if (window.location.href.includes('review.html')) {
     reviewCount++;
     localStorage.setItem('reviewCount', reviewCount);
     document.getElementById('review-count').textContent = `Review Count: ${reviewCount}`;
-}
+} 
