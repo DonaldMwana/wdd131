@@ -1,65 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <meta name="description" content="Explore the beauty of form with Donald Mwana's Form, showcasing stunning images and information about various form.">
+    <meta name="description" content="Submit a product review including rating, installation date, useful features, and written feedback.">
     <meta name="author" content="Donald Mwana">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="styles/form.css">
 </head>
+
 <body>
-    <header>
-        <h1>Product Review</h1>
-    </header>
-    <main>
-        <form id="review-form" method="get" action="review.html">
-            <label for="product-name">Product Name:</label>
-            <select id="product-name" name="product-name" required>
-                <option value="" disabled selected>Select a Product ...</option>
-                <!-- options will be populated dynamically -->
-            </select>
-            <label for="rating">Overall Rating:</label>
+
+<header>
+    <h1>Product Review</h1>
+</header>
+
+<main>
+    <form method="get" action="review.html">
+
+        <!-- Product Name -->
+        <label for="product-name">Product Name:</label>
+        <select id="product-name" name="product-name" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <!-- Rating -->
+        <fieldset>
+            <legend>Overall Rating:</legend>
             <div class="star-rating">
-                <input type="radio" id="rating-1" name="rating" value="1" required>
-                <label for="rating-1">&#9733;</label>
-                <input type="radio" id="rating-2" name="rating" value="2" required>
-                <label for="rating-2">&#733;</label>
-                <input type="radio" id="rating-3" name="rating" value="3" required>
-                <label for="rating-3">&#9733;</label>
-                <input type="radio" id="rating-4" name="rating" value="4" required>
-                <label for="rating-4">&#9733;</label>
-                <input type="radio" id="rating-5" name="rating" value="5" required>
-                <label for="rating-5">&#9733;</label>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
+
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">☆</label>
+
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">☆</label>
+
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">☆</label>
+
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">☆</label>
             </div>
-            <label for="installation-date">Date of Installation:</label>
-            <input type="date" id="installation-date" name="installation-date" required>
-            <label for="features">Which features did you find useful in product?(Check all that apply):</label>
-            <div class="checkbox-group">
-                <input type="checkbox" id="feature-1" name="features" value="feature-1">
-                <label for="feature-1">Durability </label>
-                <input type="checkbox" id="feature-2" name="features" value="feature-2">
-                <label for="feature-2">Ease of Use </label>
-                <input type="checkbox" id="feature-3" name="features" value="feature-3">
-                <label for="feature-3">Perfomance </label>
-            </div>
-            <br>
-            <label for="review">Written Review (Optional)</label>
-            <textarea id="review" name="review"></textarea>
-            <label for="username">Your Name (Optional)</label>
-            <input type="text" id="username" name="username">
-            <input type="submit" value="Submit Review">
-        </form>
-    </main>
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Donald Mwana, South Africa</p>
-        <p>Last Modified: 06/12/2025 20:30:18 <span id="lastModified"></span></p>
-    </footer>
-    <script src="script/form.js"></script>
+        </fieldset>
+
+        <!-- Installation Date -->
+        <label for="installation-date">Date of Installation:</label>
+        <input type="date" id="installation-date" name="installation-date" required>
+
+        <!-- Useful Features -->
+        <fieldset>
+            <legend>Useful Features (Check all that apply):</legend>
+
+            <input type="checkbox" id="feature1" name="features" value="durability">
+            <label for="feature1">Durability</label>
+
+            <input type="checkbox" id="feature2" name="features" value="ease">
+            <label for="feature2">Ease of Use</label>
+
+            <input type="checkbox" id="feature3" name="features" value="performance">
+            <label for="feature3">Performance</label>
+
+            <input type="checkbox" id="feature4" name="features" value="design">
+            <label for="feature4">Design</label>
+
+        </fieldset>
+
+        <!-- Written Review -->
+        <label for="review">Written Review (Optional)</label>
+        <textarea id="review" name="review" rows="4"></textarea>
+
+        <!-- Username -->
+        <label for="username">Your Name (Optional)</label>
+        <input type="text" id="username" name="username">
+
+        <input type="submit" value="Submit Review">
+    </form>
+</main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> Donald Mwana, South Africa</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+<script src="scripts/form.js" defer></script>
 </body>
 </html>

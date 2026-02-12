@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Confirmation</title>
-    <link rel="stylesheet" href="styles/form.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Submitted</title>
+<link rel="stylesheet" href="styles/form.css">
 </head>
+
 <body>
-    <header>
-        <h1>Review Confirmation</h1>
-    </header>
-    <main>
-        <p id="review-count"></p>
-        <p>Thank you for submitting your review!</p>
-    </main>
-    <footer>
-        <!-- common footer content -->
-    </footer>
-    <script src="script/form.js"></script>
+
+<header>
+<h1>Thank You!</h1>
+</header>
+
+<main style="text-align:center;">
+<h2>Your review has been submitted successfully.</h2>
+<p>Total Reviews Submitted: <span id="reviewCount"></span></p>
+<a href="form.html">Submit Another Review</a>
+</main>
+
+<footer>
+<p>&copy; <span id="currentyear"></span> Donald Mwana</p>
+</footer>
+
+<script src="scripts/review.js" defer></script>
 </body>
 </html>
