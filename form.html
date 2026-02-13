@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- External CSS -->
     <link rel="stylesheet" href="styles/form.css">
 </head>
 
@@ -31,24 +30,25 @@
             <option value="" disabled selected>Select a Product ...</option>
         </select>
 
-        <!-- Overall Rating -->
+        <!-- Rating -->
         <fieldset>
             <legend>Overall Rating:</legend>
+            <div class="star-rating">
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
 
-            <input type="radio" id="star1" name="rating" value="1" required>
-            <label for="star1">☆</label>
+                <input type="radio" id="star2" name="rating" value="2" required>              
+                <label for="star2">☆</label>
 
-            <input type="radio" id="star2" name="rating" value="2" required>
-            <label for="star2">☆</label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3">☆</label>
 
-            <input type="radio" id="star3" name="rating" value="3" required>
-            <label for="star3">☆</label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4">☆</label>
 
-            <input type="radio" id="star4" name="rating" value="4" required>
-            <label for="star4">☆</label>
-
-            <input type="radio" id="star5" name="rating" value="5" required>
-            <label for="star5">☆</label>
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">☆</label>
+            </div>
         </fieldset>
 
         <!-- Installation Date -->
@@ -62,7 +62,7 @@
             <input type="checkbox" id="feature1" name="features" value="durability">
             <label for="feature1">Durability</label>
 
-            <input type="checkbox" id="feature2" name="features" value="ease-of-use">
+            <input type="checkbox" id="feature2" name="features" value="ease">
             <label for="feature2">Ease of Use</label>
 
             <input type="checkbox" id="feature3" name="features" value="performance">
@@ -77,13 +77,11 @@
         <label for="review">Written Review (Optional)</label>
         <textarea id="review" name="review" rows="4"></textarea>
 
-        <!-- User Name -->
+        <!-- Username -->
         <label for="username">Your Name (Optional)</label>
         <input type="text" id="username" name="username">
 
-        <!-- Submit Button -->
         <input type="submit" value="Submit Review">
-
     </form>
 </main>
 
@@ -92,8 +90,6 @@
     <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
 
-<!-- External JavaScript -->
 <script src="scripts/form.js" defer></script>
-
 </body>
 </html>
