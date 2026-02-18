@@ -3,30 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Destinations</title>
-<link rel="stylesheet" href="css/styles.css">
-<script defer src="js/script.js"></script>
+<title>Destinations | South Africa Travel Guide</title>
+<link rel="stylesheet" href="styles/styles.css">
+<script src="scripts/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <h1>Destinations</h1>
-    <button id="menuBtn">☰</button>
-    <nav id="navMenu">
-        <a href="index.html">Home</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <h1>Destinations</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
 <section>
-    <h2>Explore Popular Locations</h2>
-    <div id="destinationContainer"></div>
+  <label for="regionFilter">Filter by Region:</label>
+  <select id="regionFilter">
+    <option value="all">All</option>
+    <option value="Western Cape">Western Cape</option>
+    <option value="Mpumalanga">Mpumalanga</option>
+    <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+  </select>
+</section>
+
+<section>
+  <div id="destinationList" class="card-grid"></div>
 </section>
 
 <footer>
-    <p>&copy; 2026 South Africa Travel Guide</p>
+  <p>© 2026 South Africa Travel Guide</p>
 </footer>
 
 </body>

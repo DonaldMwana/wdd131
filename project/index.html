@@ -3,42 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Explore the beauty of South Africa. Discover destinations, culture, and travel tips.">
 <title>South Africa Travel Guide</title>
-
-<link rel="stylesheet" href="css/styles.css">
-<script defer src="js/script.js"></script>
+<meta name="description" content="Explore South Africa's top destinations, culture, and attractions.">
+<meta name="author" content="Donald Mwana">
+<link rel="stylesheet" href="styles/styles.css">
+<script src="scripts/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <h1>South Africa Travel Guide</h1>
-    <button id="menuBtn">☰</button>
-    <nav id="navMenu">
-        <a href="index.html">Home</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <h1>South Africa Travel Guide</h1>
+  <nav>
+    <button id="menu-btn">☰</button>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
 </header>
 
 <section class="hero">
-    <h2>Discover the Beauty of South Africa</h2>
+  <h2>Discover the Beauty of South Africa</h2>
 </section>
 
-<section class="intro">
-    <h2>Welcome</h2>
-    <p>Explore top destinations, culture, wildlife, and travel experiences across South Africa.</p>
-</section>
-
-<section class="featured">
-    <h2>Featured Destinations</h2>
-    <div id="destinationContainer"></div>
+<section>
+  <h2>Featured Destinations</h2>
+  <div id="featured" class="card-grid"></div>
 </section>
 
 <footer>
-    <p>&copy; 2026 South Africa Travel Guide</p>
-    <p id="lastModified"></p>
+  <p>© 2026 South Africa Travel Guide</p>
+  <button id="darkToggle">Toggle Dark Mode</button>
 </footer>
 
 </body>

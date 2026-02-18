@@ -3,46 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us</title>
-<link rel="stylesheet" href="css/styles.css">
-<script defer src="js/script.js"></script>
+<title>Contact | South Africa Travel Guide</title>
+<link rel="stylesheet" href="styles/styles.css">
+<script src="scripts/main.js" defer></script>
 </head>
 
 <body>
 
 <header>
-    <h1>Contact Us</h1>
-    <button id="menuBtn">☰</button>
-    <nav id="navMenu">
-        <a href="index.html">Home</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<h1>Contact Us</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="destinations.html">Destinations</a>
+</nav>
 </header>
 
-<section>
-    <h2>Send Us a Message</h2>
-    <form id="contactForm">
-        <label>Name:
-            <input type="text" id="name" required>
-        </label>
+<main>
+<form id="contactForm">
+<label for="name">Name</label>
+<input type="text" id="name" required>
 
-        <label>Email:
-            <input type="email" id="email" required>
-        </label>
+<label for="email">Email</label>
+<input type="email" id="email" required>
 
-        <label>Message:
-            <textarea id="message" required></textarea>
-        </label>
+<label for="message">Message</label>
+<textarea id="message" required></textarea>
 
-        <button type="submit">Submit</button>
-    </form>
+<button type="submit">Send Message</button>
+</form>
 
-    <p id="formResponse"></p>
-</section>
+<p id="formMessage"></p>
+<p>Total Messages Sent: <span id="messageCount"></span></p>
+</main>
 
 <footer>
-    <p>&copy; 2026 South Africa Travel Guide</p>
+<p>© 2026 South Africa Travel Guide</p>
 </footer>
 
 </body>
